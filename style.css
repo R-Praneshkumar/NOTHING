@@ -52,12 +52,159 @@ body{
     color: #1d3557;
     margin: 20px 0px;
 }
+/* Menu Syles */
+.explore_menu_text{
+    font-size: 30px;
+    color: #1d3557;
+    margin: 55px 0px;
+    text-align: center;
+}
+
 .food_menu_card{
     width: 100%;
+    background-color:white;
+    border-radius: 8px;
+    margin-bottom: 15px;
 }
 .food_image{
 width: 100%;
+border-radius: 8px 8px 0 0;
 }
+.food_menu_card_description{
+    padding: 20px;
+}
+.explore_menu_view_more{
+    display: flex;
+    justify-content: center;
+}
+.restaurants_description{
+    font-size: 30px;
+    color: #1d3557;
+    margin: 55px 0px;
+    text-align: center;
+}
+.restaurants_flex_row_one,.restaurants_flex_row_two{
+    width: 100%;
+    display: flex;
+    gap: 4px;
+    }
+.restaurants_flex_row_one{
+    align-items: baseline;
+    margin-bottom: 4px;
+}
+.restaurant_1_image,.restaurant_2_image,.restaurant_3_image,.restaurant_4_image{
+    width:100%;
+    height: 100%;
+    border-radius: 6px;
+}
+.restaurant_1,.restaurant_4{
+    width: 100%;
+    height: 150px;
+    
+}
+.restaurant_2,.restaurant_3{
+    width:120%;
+    height: 200px;}
+
+.contact{
+    display: flex;
+    flex-direction: column;
+    gap:20px;
+    justify-content:center;
+    align-items: center;
+    margin:3rem auto;
+    text-align:center;
+    width: 90%;}
+.contact_text{
+    text-align: center;
+    gap:10px;
+}
+.email{
+    border-radius:30px;
+    border:none;
+    outline:none;
+    display: inline-block;
+    align-items: center;
+    gap: 10px;
+}
+.input{
+    display:flex;
+    justify-content:space-evenly;
+    border-radius:30px;
+    padding-left:30px;
+    padding-top:20px;
+    gap: 10px;
+    justify-content: center;
+    margin:2px auto;
+}
+.button_primary{
+    padding-bottom:-5px;
+}
+
+.email_input{
+    border:1px solid #ee89a0;
+    background-color: #fcedf0;
+    color: #1d3557;
+    padding:0.8rem;
+    border-radius: 4px;
+}
+.email_input::placeholder{
+    color: #bdbcbc;
+}
+
+
+footer{
+    display: flex;
+    align-items: center;
+    justify-content:safe;
+    
+    background-image: linear-gradient(
+     to right,
+        #ff512f 0%,
+        #dd2476 51%,
+        #ff512f 100%
+        
+    );
+    margin-top:30px;
+
+    flex-direction: row;
+    width: 110%;
+    list-style:none;
+}
+
+
+    
+
+
+.quote_container{
+    position:relative;
+    margin-top: 4rem;
+    align-items: center;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 200px;
+    width:100%;
+    border-radius:13px;
+    background: url("https://images.unsplash.com/photo-1522336572468-97b06e8ef143?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=755&q=80")
+    center center / cover no-repeat;
+}
+.quote_image_overlay{
+    position: absolute;
+    height: 200px;
+    width:100%;
+    border-radius:13px;
+    background: color #0a4065;
+    opacity:49%;
+}
+.quote_image_text{
+    color: #fff;
+    z-index:3;
+    margin:0 1rem;
+    text-align:center;
+}
+
+
 
 @media  (min-width: 768px){
 .navbar{
@@ -75,11 +222,91 @@ width: 100%;
     flex-direction: row-reverse;
     align-items: center;
     justify-content: space-between;
-    gap: 15px;
+    gap: 15px;}
+.explore_menu_container{
+    position: relative;
 }
-/* Menu Styles */
+.explore_menu_gradient_bg{
+    position:absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width:100%;
+    background-image:linear-gradient(
+        to right,
+        #ff512f 0%,
+        #dd2476 51%,
+        #ff512f 100%);
+        z-index:-3;
+        transform: skewY(-5deg);
+    
+}
+
+.explore_menu_lists{
+    margin-top: 30px;
+    display: flex;
+    gap: 10px;
+}
+#pizza_card{
+    margin-top: -20px;
+    margin-bottom: 30px;
+}
+.explore_menu_text{
+    font-size: 50px;
+    margin: 65px 0px;
+}
+.restaurants_description{
+  font-size: 45px;
+width: 100%;}
+.restaurants_container{
+    display: flex;
+align-items: center;
+}
+.restaurants_flex{
+    width:100%;
+}
+.email_subscriber_container{
+    display: flex;
+    justify-content: center;
+}
+.email_input{
+    width:20rem;
+}
+.quote_container{
+    height:300px;
+    width:100%;
+}
+.quote_image_overlay{
+    position:absolute;
+    height:300px;
+    width:100%;
+    border-radius:13px;
+    background-color: #0a4065;
+    opacity:49%;
+}
+.quote_image_text{
+    color: #fff;
+    z-index:3;
+    margin: 0 1rem;
+    text-align: center;
+    font-size:2rem;
+    font-weight:500;
+    line-height:1.2;
+}
+footer{
+    margin-top:3rem ;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    
+}
+
 
 }
+
+
+     
+
 @media (min-width:1020px){
     .container{
         max-width: 900px;
@@ -89,14 +316,19 @@ width: 100%;
     .hero_text{
         font-size: 50px;
     }
+    .explore_menu_lists{
+        
+        gap: 22px;
+        padding: 0 20px;}
+    .explore_menu_text{
+        font-size: 50px;
+        margin: 65px 0px;
+    }
+    
+    
 
 }
 @media(min-width:1400px){
     .container{
-        max-width: 1250px;
-        
+        max-width: 1250px;}
     }
-}
-    
-
- 
