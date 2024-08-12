@@ -156,7 +156,7 @@ border-radius: 8px 8px 0 0;
 footer{
     display: flex;
     align-items: center;
-    justify-content:safe;
+    justify-content: space-evenly;
     
     background-image: linear-gradient(
      to right,
