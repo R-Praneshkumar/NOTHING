@@ -158,17 +158,11 @@ footer{
     align-items: center;
     justify-content: space-evenly;
     
-    background-image: linear-gradient(
-     to right,
-        #ff512f 0%,
-        #dd2476 51%,
-        #ff512f 100%
-        
-    );
+   
     margin-top:30px;
 
     flex-direction: row;
-    width: 110%;
+    width: 100%;
     list-style:none;
 }
 
